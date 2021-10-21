@@ -905,7 +905,7 @@ body {
 .contact {
 	padding-top   : 136px;
 	padding-bottom: 138px;
-	background    : #FFFFFF git url('./../images/shield--big.svg')no-repeat -125px 64px /906px;
+	background    : #FFFFFF url('./../images/shield--big.svg')no-repeat -125px 64px /906px;
 }
 
 .contact__title {
