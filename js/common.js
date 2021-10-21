@@ -65,9 +65,9 @@ document.addEventListener('DOMContentLoaded', function () {
 	let piece = $('#demo').find('*');
 	$('.animLogo').toggleClass('active')
 
-	// setInterval(function () {
-	// 	$('.animLogo').toggleClass('active')
-	// }, 10000)
+	setInterval(function () {
+		$('.animLogo').toggleClass('active')
+	}, 10000)
 
 	piece.each(function (i, element) {
 		$(element).removeAttr('transform').css({
