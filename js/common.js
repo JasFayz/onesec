@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		margin: 10,
 		nav: true,
 		dots: true,
+		lazyLoad: true,
 		autoWidth: true,
 		navText: [`<div class="prev-btn"><svg xmlns="http://www.w3.org/2000/svg" width="14.261" height="13.9" viewBox="0 0 14.261 13.9">
 		<path id="Icon_awesome-arrow-right" data-name="Icon awesome-arrow-right" d="M8.2,3.578l-.707-.707a.761.761,0,0,0-1.079,0L.224,9.056a.761.761,0,0,0,0,1.079l6.188,6.188a.761.761,0,0,0,1.079,0l.707-.707a.765.765,0,0,0-.013-1.092L4.349,10.87H13.5a.762.762,0,0,0,.764-.764V9.088a.762.762,0,0,0-.764-.764H4.349L8.185,4.67A.759.759,0,0,0,8.2,3.578Z" transform="translate(0 -2.647)" fill="#cbcbcb"/>
@@ -25,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		margin: 10,
 		nav: true,
 		dots: true,
+		lazyLoad: true,
 		autoWidth: true,
 		navText: [`<div class="prev-btn"><svg xmlns="http://www.w3.org/2000/svg" width="14.261" height="13.9" viewBox="0 0 14.261 13.9">
 		<path id="Icon_awesome-arrow-right" data-name="Icon awesome-arrow-right" d="M8.2,3.578l-.707-.707a.761.761,0,0,0-1.079,0L.224,9.056a.761.761,0,0,0,0,1.079l6.188,6.188a.761.761,0,0,0,1.079,0l.707-.707a.765.765,0,0,0-.013-1.092L4.349,10.87H13.5a.762.762,0,0,0,.764-.764V9.088a.762.762,0,0,0-.764-.764H4.349L8.185,4.67A.759.759,0,0,0,8.2,3.578Z" transform="translate(0 -2.647)" fill="#cbcbcb"/>
