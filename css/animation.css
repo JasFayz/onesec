@@ -15223,8 +15223,9 @@
 
 .animLogo {
     position: relative;
-
+    right   : -15px;
 }
+
 .animLogo * {
     transition: all 5s ease;
     position  : relative;
@@ -15236,7 +15237,7 @@
     top       : 50%;
     left      : 50%;
     transform : translate(-60%, -50%);
-    transition: width 5s linear;
+    transition: all 4.5s linear;
     width     : 120px;
     height    : 95px;
 
@@ -15249,5 +15250,5 @@
 }
 
 #group_29 {
-    mix-blend-mode: overlay!important;
+    mix-blend-mode: overlay !important;
 }

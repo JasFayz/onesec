@@ -5,7 +5,7 @@
 	--fontsize  : 16px;
 	--textcolor : #333;
 	--lineheight: 1.65;
-	--userfont  : roboto-st, sans-serif;
+	--userfont  : "Montserrat", sans-serif;
 	--systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
 }
 
@@ -31,7 +31,7 @@
 
 @font-face {
 	src        : url("../fonts/Montserrat-Regular.woff") format("woff2");
-	font-family: "roboto-st";
+	font-family: "Montserrat";
 	font-weight: 400;
 	font-style : normal;
 }
@@ -39,7 +39,7 @@
 
 @font-face {
 	src        : url("../fonts/Montserrat-Bold.woff") format("woff2");
-	font-family: "roboto-st";
+	font-family: "Montserrat";
 	font-weight: 700;
 	font-style : normal;
 }
@@ -85,8 +85,8 @@ body {
 
 .apply_button {
 	position: fixed;
-	bottom  : 75px;
-	right   : 75px;
+	bottom  : 85px;
+	right   : 115px;
 	cursor  : pointer;
 	z-index : 2000;
 
@@ -193,12 +193,12 @@ body {
 
 
 .header {
-	position   : absolute;
-	top        : 0;
-	left       : 0;
-	right      : 0;
-	z-index    : 100;
-	padding-top: 31px;
+	position  : absolute;
+	top       : 0;
+	left      : 0;
+	right     : 0;
+	z-index   : 100;
+	margin-top: 31px;
 }
 
 .header__wrapper {
@@ -208,7 +208,7 @@ body {
 
 }
 
-.header__wrapper::before {
+.header__line {
 	content        : '';
 	display        : block;
 	width          : 100%;
@@ -217,7 +217,9 @@ body {
 	background     : white;
 	position       : absolute;
 	top            : 50%;
-	transform      : translateY(-50%);
+	left           : 50%;
+	transform      : translate(-50%, 0);
+	width          : calc(100% - 280px);
 }
 
 .header__logo {
@@ -325,9 +327,9 @@ body {
 
 .intro .social {
 	position   : absolute;
-	top        : 0;
+	top        : 55px;
 	/* top     : 170px; */
-	left       : 0;
+	left       : 128px;
 	bottom     : 0;
 }
 
@@ -341,7 +343,7 @@ body {
 	background      : white;
 	top             : -1px;
 	left            : 50%;
-	transform       : translateX(calc(-50% - 2px));
+	transform       : translateX(-50%);
 
 	z-index: 1;
 }
@@ -372,7 +374,7 @@ body {
 }
 
 .intro__slider {
-	width         : 547px;
+	/* width         : 547px; */
 	margin        : 0 auto;
 	padding-top   : 565px;
 	text-align    : center;
@@ -380,7 +382,17 @@ body {
 }
 
 .intro__slider .item {
-	width: 547px !important;
+	width : 547px !important;
+	margin: 0 auto;
+}
+
+.intro__slider .owl-item {
+	opacity   : 0;
+	transition: 1s linear;
+}
+
+.intro__slider .owl-item.active {
+	opacity: 1;
 }
 
 .intro__slider .item_icon {
@@ -470,7 +482,7 @@ body {
 	height       : 406px;
 	position     : absolute;
 	bottom       : 0;
-	right        : 0;
+	right        : 132px;
 	margin-right : -193px;
 	margin-bottom: -74px;
 	z-index      : 15;
@@ -478,13 +490,13 @@ body {
 
 .intro__hline--left {
 	position     : absolute;
-	top          : 0;
+	top          : 55px;
 	bottom       : 0;
-	right        : 10px;
+	right        : 139px;
 	width        : 1px;
 	border       : 1px solid #fff;
 	/* background: white; */
-	height       : calc(100% - 332px)
+	height       : calc(100% - 380px)
 }
 
 
@@ -556,14 +568,24 @@ body {
 }
 
 .teams__slider {
-	width   : 518px;
+	/* width   : 518px; */
 	margin  : 0 auto;
 	position: relative;
 	top     : -139px;
 }
 
 .teams__slider .item {
-	width: 518px !important;
+	width : 518px !important;
+	margin: 0 auto;
+}
+
+.teams__slider .owl-item {
+	opacity   : 0;
+	transition: all 1s linear;
+}
+
+.teams__slider .owl-item.active {
+	opacity: 1;
 }
 
 .teams__slider .item__icon {
