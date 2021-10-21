@@ -15227,26 +15227,26 @@
 }
 
 .animLogo * {
-    transition: all 5s ease;
+    transition: all 7s ease;
     position  : relative;
 
 }
 
 .animLogo #logo {
     position  : absolute;
-    top       : 50%;
+    top       : 490px;
     left      : 50%;
-    transform : translate(-60%, -50%);
-    transition: all 4.5s linear;
+    transform : translate(-60%, -150%);
+    transition: all 7s linear;
     width     : 120px;
     height    : 95px;
 
 }
 
 .animLogo.active #logo {
-    width : 268px;
-    height: 213px;
-
+    width    : 268px;
+    height   : 213px;
+    transform: translate(-60%, -100%);
 }
 
 #group_29 {

@@ -79,6 +79,7 @@ body {
 	min-width  : 320px;
 	position   : relative;
 	overflow-x : hidden;
+	background : #00004B;
 }
 
 /* USER STYLES */
@@ -95,22 +96,15 @@ body {
 .apply_button:hover .icon .round-1,
 .apply_button:hover .icon .round-2,
 .apply_button:hover .icon .round-3 {
-	width : 55px;
-	height: 55px;
+	width    : 55px;
+	height   : 55px;
+	animation: none;
 }
 
 .apply_button:hover .text {
-	width  : 193px;
 	opacity: 1;
 }
 
-.apply_button:hover .text span {
-	display: block;
-}
-
-.apply_button .text span {
-	display: none;
-}
 
 .apply_button .text {
 	height          : 55px;
@@ -127,9 +121,9 @@ body {
 	padding         : 18px 30px;
 	top             : 0;
 	right           : 0;
-	transition      : width 1s linear, opacity 1s linear .5s;
-
-	white-space: nowrap;
+	transition      : all 1s linear;
+	width           : 193px;
+	white-space     : nowrap;
 
 }
 
@@ -147,32 +141,36 @@ body {
 	z-index         : 2;
 }
 
+
 .apply_button .icon .round-1 {
-	position     : absolute;
-	width        : 87px;
-	height       : 87px;
-	border-radius: 50%;
-	border       : 2px solid #FF3D3D;
-	transition   : all 1s linear;
+	position      : absolute;
+	width         : 87px;
+	height        : 87px;
+	border-radius : 50%;
+	border        : 2px solid #FF3D3D;
+	transition    : all 1s linear;
+	pointer-events: none;
 }
 
 .apply_button .icon .round-2 {
-	position     : absolute;
-	width        : 111px;
-	height       : 111px;
-	border-radius: 50%;
-	border       : 2px solid #FF3D3D;
-	transition   : all 1s linear;
+	position      : absolute;
+	width         : 111px;
+	height        : 111px;
+	border-radius : 50%;
+	border        : 1px solid #FF3D3D;
+	transition    : all 1s linear;
+	pointer-events: none;
 
 }
 
 .apply_button .icon .round-3 {
-	position     : absolute;
-	width        : 137px;
-	height       : 137px;
-	border-radius: 50%;
-	border       : 2px solid #FF3D3D;
-	transition   : all 1s linear;
+	position      : absolute;
+	width         : 137px;
+	height        : 137px;
+	border-radius : 50%;
+	border        : 1px solid #FF3D3D;
+	transition    : all 1s linear;
+	pointer-events: none;
 
 }
 
@@ -249,9 +247,10 @@ body {
 }
 
 .header__nav .nav-link {
-	color      : white;
-	font-size  : 11px;
-	line-height: 14px;
+	color         : white;
+	font-size     : 11px;
+	line-height   : 14px;
+	text-transform: uppercase;
 }
 
 .header__nav .nav-lang .btn {
@@ -415,7 +414,7 @@ body {
 
 .intro__slider .owl-nav {
 	margin-top: 0;
-	position  : relative;
+	position  : absolute;
 	display   : inline-flex;
 	margin-top: 55px;
 }
@@ -906,7 +905,7 @@ body {
 .contact {
 	padding-top   : 136px;
 	padding-bottom: 138px;
-	background    : url('./../images/shield--big.svg')no-repeat -125px 64px /906px;
+	background    : #FFFFFF git url('./../images/shield--big.svg')no-repeat -125px 64px /906px;
 }
 
 .contact__title {

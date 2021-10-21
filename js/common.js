@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	  <path id="Icon_awesome-arrow-right" data-name="Icon awesome-arrow-right" d="M6.063,3.578l.707-.707a.761.761,0,0,1,1.079,0l6.188,6.184a.761.761,0,0,1,0,1.079L7.849,16.323a.761.761,0,0,1-1.079,0l-.707-.707a.765.765,0,0,1,.013-1.092L9.912,10.87H.764A.762.762,0,0,1,0,10.106V9.088a.762.762,0,0,1,.764-.764H9.912L6.076,4.67A.759.759,0,0,1,6.063,3.578Z" transform="translate(0 -2.647)" fill="#CBCBCB"/>
 	</svg>
 	</div>`],
-		
+
 	})
 	$('.teams__slider').owlCarousel({
 		loop: true,
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	  <path id="Icon_awesome-arrow-right" data-name="Icon awesome-arrow-right" d="M6.063,3.578l.707-.707a.761.761,0,0,1,1.079,0l6.188,6.184a.761.761,0,0,1,0,1.079L7.849,16.323a.761.761,0,0,1-1.079,0l-.707-.707a.765.765,0,0,1,.013-1.092L9.912,10.87H.764A.762.762,0,0,1,0,10.106V9.088a.762.762,0,0,1,.764-.764H9.912L6.076,4.67A.759.759,0,0,1,6.063,3.578Z" transform="translate(0 -2.647)" fill="#CBCBCB"/>
 	</svg>
 	</div>`],
-	
+
 	})
 
 
@@ -64,10 +64,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	let piece = $('#demo').find('*');
 	$('.animLogo').toggleClass('active')
+
+	// setInterval(function () {
+	// 	$('.animLogo').toggleClass('active')
+	// }, 10000)
+
 	piece.each(function (i, element) {
 		$(element).removeAttr('transform').css({
 			mixBlendMode: 'none'
 		})
 	})
-
+	
 })
