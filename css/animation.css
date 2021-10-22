@@ -15237,16 +15237,16 @@
     top       : 490px;
     left      : 50%;
     transform : translate(-60%, -150%);
-    transition: all 7s linear;
+    transition: width 7s ease;
     width     : 120px;
-    height    : 95px;
+   
 
 }
 
 .animLogo.active #logo {
-    width    : 268px;
-    height   : 213px;
-    transform: translate(-60%, -100%);
+    width       : 270px;
+   
+    /* transform: translate(-60%, -100%); */
 }
 
 #group_29 {
